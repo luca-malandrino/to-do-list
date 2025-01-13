@@ -8,7 +8,7 @@ taskContainer.innerHTML += tasks;
 
 
 function openPopup() {
-    popup.classList.replace("closed", "open");
+    popup.classList.replace("closed", "open");pppp
 }
 
 function closePopup() {
