@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.open {
+    background-color: #111;
+    border: none;
+    height: 25vh;
+    position: fixed;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+span {
+    vertical-align: center;
+}
+
+.popUp-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    height: 90%;
+}
+
+.closed {
+    position: absolute;
+    visibility: hidden;
+}
+
+.new-task, .add-task {
+    padding: 5px 15px;
+    font-size: 1.2em;
+    border-radius: 100px;
+    border: none;
+    background-color: #ff8800;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 13vw;
+    transition: background-color, transform 100ms ease-in;
+}
+
+.add-task {
+    width: 13vw;
+    margin: 30px auto 0 auto;
+}
+
+.new-task:hover, .add-task:hover, .reset-btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+.new-task:active, .add-task:active, .reset-btn:active {
+    background-color: #ff4400;
+}
+
+input[type="checkbox"] {
+    clip-path: circle(40%);
+    transform: scale(1.4);
+    cursor: pointer;
+    accent-color: #ff8800;
+}
+
+input[type="checkbox"]:checked + .task-name {
+    color: #888;
+    text-decoration: line-through;
+} 
+
+.task-name {
+    cursor: pointer;
+}
+
+#X-btn {
+    background-color: #111;
+    border: none;
+    font-weight: bold;
+    color: #f00;
+    margin-left: 95%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#X-btn:hover {
+    background-color: #222;
+}
+
+#X-btn:active {
+    background-color: #666;
+}
+
+.delete-task-btn {
+    color: white;
+    background-color: #000;
+    border: none;
+    margin-left: 60vw;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.delete-task-btn:hover {
+    color: #ccc;
+}
+
+.reset-btn {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    width: 13vw;
+    height: 5vh;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color, transform 100ms ease-in;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#task {
+    display: flex;
+    justify-content: space-between;
+    padding: none;
+    margin: none;
+}
+
+.fa-trash:hover {
+    color: #ccc;
+}

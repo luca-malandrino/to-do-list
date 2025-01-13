@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button type="button" class="new-task" onclick="openPopup()">New Task</button>
+        <button type="button" class="reset-btn" onclick="resetTasks()">Reset</button>
+    </header>
+    <div id="taskContainer">
+    </div>
+    <div class="popUp-container">
+        <fieldset class="closed" id="popup">
+            <button type="button" onclick="closePopup()" id="X-btn">X</button><br>
+            <span>
+                <label for="newTaskName">Name of the task:</label>
+                <input type="text" id="newTaskName" class="openInput">
+            </span>
+            <button type="button" class="add-task" onclick="addTask()">Add Task</button>
+        </fieldset>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
